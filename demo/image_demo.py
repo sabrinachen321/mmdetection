@@ -19,6 +19,7 @@ def main():
     # test a single image
     result = inference_detector(model, args.img)
     # show the results
+    model.show_result(args.img, result, out_file='demo/result.jpg')
     show_result_pyplot(model, args.img, result, score_thr=args.score_thr)
 
 
